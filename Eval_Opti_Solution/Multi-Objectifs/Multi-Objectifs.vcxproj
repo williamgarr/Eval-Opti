@@ -141,6 +141,16 @@
   <ItemGroup>
     <ClCompile Include="Multi-Objectifs.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="test.dat" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Arc.h" />
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="Label.h" />
+    <ClInclude Include="Solution.h" />
+    <ClInclude Include="Sommet.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
