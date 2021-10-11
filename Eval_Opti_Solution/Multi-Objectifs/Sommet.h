@@ -4,6 +4,12 @@
 #include "Arc.h"
 #include "Label.h"
 
+void decaler_gauche(std::vector<Label> l, int deb, int fin) {
+	for (int i = deb; i <= fin; i++) {
+		l[i] = l[i + 1];
+	}
+}
+
 class Sommet {
 public:
 	int numero_sommet;
@@ -31,5 +37,9 @@ public:
 
 	void ajouter_label(Label l) {
 		labels.push_back(l);
+	}
+
+	void inserer_label(Label l) {
+		
 	}
 };
