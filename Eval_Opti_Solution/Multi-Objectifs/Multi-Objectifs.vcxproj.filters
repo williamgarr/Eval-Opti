@@ -40,5 +40,8 @@
     <ClInclude Include="Config.h">
       <Filter>Fichiers sources</Filter>
     </ClInclude>
+    <ClInclude Include="UniqueQueue.h">
+      <Filter>Fichiers sources</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

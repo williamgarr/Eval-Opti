@@ -40,6 +40,10 @@ void test_list_label() {
         (*it).second.afficher_label();
 }
 
+void test_file() {
+
+}
+
 int main()
 {
     std::cout << "Program start-up" << std::endl;
@@ -47,6 +51,8 @@ int main()
     Solution s;
     debug = true;
     // s.lecture_fichier(fichier);
+    
+    // test_label();
+    // test_list_label();
 
-    test_list_label();
 }

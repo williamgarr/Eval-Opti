@@ -150,6 +150,7 @@
     <ClInclude Include="Label.h" />
     <ClInclude Include="Solution.h" />
     <ClInclude Include="Sommet.h" />
+    <ClInclude Include="UniqueQueue.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
