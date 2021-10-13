@@ -20,30 +20,24 @@ void test_label() {
     std::cout << comparer_label(l3, l1) << std::endl;
 }
 
-void test_decaler_gauche() {
-    std::vector<int> l;
-    for (int i = 0; i < 10; i++) {
-        l.push_back(i);
-        std::cout << i << " ";
-    }
-    std::cout << std::endl;
-    for (int i = 4; i < l.size() - 1; i++) {
-        l[i] = l[i + 1];
-    }
-    for (int i = 0; i < l.size(); i++) {
-        std::cout << i << " ";
-    }
-}
+void test_list_label() {
+    Sommet s(1);
+    Label l1(0, 10, 10);
+    Label l2(1, 5, 10);
+    Label l3(2, 10, 5);
+    Label l4(3, 9, 4);
+    Label l5(4, 11, 11);
 
-void test() {
-    std::vector<int> v;
-    for (int i = 0; i < 10; i++) {
-        v.push_back(i);
-        std::cout << i << " ";
-    } std::cout << std::endl;
-    for (int i = 0; i < v.size(); i++) {
-        std::cout << i << " ";
-    } std::cout << std::endl;
+    s.ajouter_label(l1);
+    s.ajouter_label(l2);
+    s.ajouter_label(l2);
+    s.ajouter_label(l3);
+    s.ajouter_label(l4);
+    s.ajouter_label(l5);
+
+    std::map<int, Label>::iterator it;
+    for (it = s.labels.begin(); it != s.labels.end(); it++)
+        (*it).second.afficher_label();
 }
 
 int main()
@@ -54,6 +48,5 @@ int main()
     debug = true;
     // s.lecture_fichier(fichier);
 
-    // test_decaler_gauche();
-    test();
+    test_list_label();
 }

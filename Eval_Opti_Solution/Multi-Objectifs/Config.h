@@ -1,7 +1,10 @@
 #pragma once
 
-// Variable de debug : affiche des informations complémentaires lors de l'exécution
+// Variable de debug : affiche des informations complÃ©mentaires lors de l'exï¿½cution
 int debug = false;
 
-// Retention des labels : indique le nombre de label maximum à garder dans chaque sommet
+// Retention des labels : indique le nombre de label maximum Ã  garder dans chaque sommet
 int retention_label = 10;
+
+// Numero de dÃ©part des labels
+int prochain_numero_label = 0;

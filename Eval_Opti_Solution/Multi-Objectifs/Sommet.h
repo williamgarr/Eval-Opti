@@ -1,13 +1,25 @@
 #pragma once
 
 #include <vector>
+#include <map>
 #include "Arc.h"
 #include "Label.h"
+#include "Config.h"
 
-void decaler_gauche(std::vector<Label> l, int deb, int fin) {
-	for (int i = deb; i <= fin; i++) {
-		l[i] = l[i + 1];
-	}
+/**
+* 0 -> gauche ? droit
+* 1 -> gauche < droit
+* 2 -> gauche > droit
+* 3 -> gauche = droit
+*/
+int comparer_label(Label gauche, Label droit) {
+	int nl = 1;
+	int np = 2;
+	if ((gauche.longueur < droit.longueur) || (gauche.cout < droit.cout))
+		np = 0;
+	if ((droit.longueur < gauche.longueur) || (droit.cout < gauche.cout))
+		nl = 0;
+	return nl + np;
 }
 
 class Sommet {
@@ -15,7 +27,7 @@ public:
 	int numero_sommet;
 	std::vector<int> successeurs;
 	std::vector<Arc> arcs;
-	std::vector<Label> labels;
+	std::map<int, Label> labels;
 
 	Sommet(int num) : numero_sommet(num) {}
 	
@@ -32,14 +44,28 @@ public:
 	}
 
 	void ajouter_label(int num, int l, int c) {
-		labels.push_back(Label(num, l, c));
+		inserer_label(Label(num, l, c));
 	}
 
 	void ajouter_label(Label l) {
-		labels.push_back(l);
+		inserer_label(l);
 	}
 
 	void inserer_label(Label l) {
-		
+		// si l dominé par label dans la liste -> arrêter, pas d'insert
+		// si l domine un label dans la liste -> supprimer le label (attention algorithme à l'algorithme à pile -> supprimer sommet dans la pile si le label est le seul qui doit être exec)
+		std::map<int, Label>::iterator it;
+		std::vector<int> to_erase;
+		for (it = labels.begin(); it != labels.end(); it++) {
+			int cmp = comparer_label(l, (*it).second);
+			if (cmp == 2 || cmp == 3) return; // si l dominé ou l = p (l existe déjà dans la liste)
+			if (cmp == 1)  to_erase.push_back((*it).first); // si l domine un label existant
+		}
+
+		for (int i = 0; i < to_erase.size(); i++)
+			labels.erase(to_erase[i]);
+
+		// TODO AJOUTER LE SOMMET A LA PILE D'EXEC
+		labels.insert(std::pair<int, Label>(l.numero_label, l));
 	}
 };
