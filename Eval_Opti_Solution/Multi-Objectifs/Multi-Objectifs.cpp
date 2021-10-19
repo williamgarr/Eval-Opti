@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string>
+#include <map>
 #include "Config.h"
 #include "Solution.h"
 
@@ -68,7 +69,6 @@ int main()
     std::string fichier = "test.dat";
     Solution s;
     debug = true;
-    // s.lecture_fichier(fichier);
     
     // test_label();
     // test_list_label();
@@ -76,7 +76,9 @@ int main()
 
     s.exec(fichier);
 
-    for (unsigned int i = 0; i < s.sommets[arrive-1].labels.size(); i++) {
-        s.sommets[arrive].labels[i].afficher_label();
+    std::cout << "RESULTS : Départ = " << depart << " ; Arrivé = " << arrive << std::endl;
+    std::map<int, Label>::iterator it;
+    for (it = s.sommets[arrive].labels.begin(); it != s.sommets[arrive].labels.end(); it++) {
+        (*it).second.afficher_label();
     }
 }

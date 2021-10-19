@@ -74,9 +74,10 @@ public:
 		while (!algo_queue.queue.empty()) {
 			int sommet_en_cours = algo_queue.defiler();
 			std::cout << "MILESTONE : Début process sommet n°" << sommet_en_cours << std::endl;
-			for (unsigned int i = 0; i < sommets[sommet_en_cours].labels.size(); i++) {
-				Label L = sommets[sommet_en_cours].labels[i];
-				if (debug) L.afficher_label();
+			std::map<int, Label>::iterator it_label;
+			for (it_label = sommets[sommet_en_cours].labels.begin(); it_label != sommets[sommet_en_cours].labels.end(); it_label++) {
+				Label L = (*it_label).second;
+				//if (debug) L.afficher_label();
 				std::map<int, std::pair<double, double>>::iterator it;
 				for (it = sommets[sommet_en_cours].quick_access.begin(); it != sommets[sommet_en_cours].quick_access.end(); it++) {
 					int succ = (*it).first;
@@ -86,7 +87,7 @@ public:
 					Label P(prochain_numero_label, L.longueur + longueur, L.cout + cout);
 					prochain_numero_label++;
 					if (debug) P.afficher_label();
-					P.ajouter_sommet(L, succ);
+					//P.ajouter_sommet(L, succ);
 					sommets[succ].inserer_label(P);
 				}
 			}

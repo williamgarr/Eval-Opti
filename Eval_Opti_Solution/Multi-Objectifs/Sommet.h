@@ -61,8 +61,6 @@ public:
 	}
 
 	void inserer_label(Label l) {
-		l.afficher_label();
-		std::cout << "LABEL AVANT INSERT" << std::endl;
 		// si l dominé par label dans la liste -> arrêter, pas d'insert
 		// si l domine un label dans la liste -> supprimer le label (attention algorithme à l'algorithme à pile -> supprimer sommet dans la pile si le label est le seul qui doit être exec)
 		std::map<int, Label>::iterator it;
