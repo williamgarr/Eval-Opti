@@ -62,11 +62,13 @@ public:
 			if (cmp == 1)  to_erase.push_back((*it).first); // si l domine un label existant
 		}
 
-		for (int i = 0; i < to_erase.size(); i++) {
+		for (unsigned int i = 0; i < to_erase.size(); i++) {
 			labels.erase(to_erase[i]);
+			algo_queue.nb_labels[to_erase[i]]--;
 		}
 			
 		algo_queue.enfiler(numero_sommet);
+		algo_queue.nb_labels[numero_sommet]++;
 		labels.insert(std::pair<int, Label>(l.numero_label, l));
 	}
 };

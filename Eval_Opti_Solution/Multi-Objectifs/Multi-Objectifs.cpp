@@ -41,7 +41,25 @@ void test_list_label() {
 }
 
 void test_file() {
-
+    algo_queue.display();
+    algo_queue.enfiler(1);
+    algo_queue.nb_labels[1]++;
+    algo_queue.enfiler(2);
+    algo_queue.nb_labels[2]++;
+    algo_queue.display();
+    algo_queue.enfiler(1);
+    algo_queue.nb_labels[1]++;
+    algo_queue.display();
+    algo_queue.enfiler(3);
+    algo_queue.display();
+    algo_queue.verify_no_exec();
+    algo_queue.display();
+    algo_queue.nb_labels[1]--;
+    algo_queue.verify_no_exec();
+    algo_queue.display();
+    algo_queue.nb_labels[1]--;
+    algo_queue.verify_no_exec();
+    algo_queue.display();
 }
 
 int main()
@@ -54,5 +72,5 @@ int main()
     
     // test_label();
     // test_list_label();
-
+    // test_file();
 }

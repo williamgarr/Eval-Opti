@@ -18,7 +18,7 @@ public:
 		std::cout << "Label N°" << numero_label << " : Longueur = " << longueur << " ; Cout = " << cout << std::endl;
 		if (chemin.size() > 0) {
 			std::cout << "Chemin = ";
-			for (int i = 0; i < chemin.size(); i++) {
+			for (unsigned int i = 0; i < chemin.size(); i++) {
 				std::cout << chemin[i] << " ";
 			}
 			std::cout << std::endl;
