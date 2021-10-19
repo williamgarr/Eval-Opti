@@ -2,10 +2,12 @@
 
 #include <string>
 #include <vector>
+#include <map>
 #include <iostream>
 #include <fstream>
 #include "Sommet.h"
 #include "Label.h"
+#include "Config.h"
 
 class Solution {
 public:
@@ -58,5 +60,38 @@ public:
 			std::cout << "ERREUR : Ouverture du fichier" << std::endl;
 	}
 
+	void exec(std::string fichier) {
+		lecture_fichier(fichier);
+		for (unsigned int i = 0; i < sommets.size(); i++) sommets[i].preprocess_successeurs();
+		std::cout << "MILESTONE : Préprocess terminé" << std::endl;
+
+		algo_queue.enfiler(depart);
+		Label l_depart(prochain_numero_label, 0, 0);
+		prochain_numero_label++;
+		sommets[depart].inserer_label(l_depart);
+		std::cout << "MILESTONE : Initialisation terminé" << std::endl;
+
+		while (!algo_queue.queue.empty()) {
+			int sommet_en_cours = algo_queue.defiler();
+			std::cout << "MILESTONE : Début process sommet n°" << sommet_en_cours << std::endl;
+			for (unsigned int i = 0; i < sommets[sommet_en_cours].labels.size(); i++) {
+				Label L = sommets[sommet_en_cours].labels[i];
+				if (debug) L.afficher_label();
+				std::map<int, std::pair<double, double>>::iterator it;
+				for (it = sommets[sommet_en_cours].quick_access.begin(); it != sommets[sommet_en_cours].quick_access.end(); it++) {
+					int succ = (*it).first;
+					std::cout << "MILESTONE : Process " << sommet_en_cours << "/" << succ << std::endl;
+					double longueur = (*it).second.first;
+					double cout = (*it).second.second;
+					Label P(prochain_numero_label, L.longueur + longueur, L.cout + cout);
+					prochain_numero_label++;
+					if (debug) P.afficher_label();
+					P.ajouter_sommet(L, succ);
+					sommets[succ].inserer_label(P);
+				}
+			}
+			algo_queue.verify_no_exec();
+		}
+	}
 
 };

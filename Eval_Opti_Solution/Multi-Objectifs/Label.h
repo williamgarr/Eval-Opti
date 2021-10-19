@@ -7,6 +7,8 @@ public:
 	double cout;
 	std::vector<int> chemin;
 
+	Label() : numero_label(-1), longueur(-1), cout(-1) {}
+
 	Label(int num, double l, double c) : numero_label(num), longueur(l), cout(c) {}
 
 	void ajouter_sommet(Label prec, int sommet) {

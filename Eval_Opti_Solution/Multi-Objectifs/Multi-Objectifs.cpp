@@ -73,4 +73,10 @@ int main()
     // test_label();
     // test_list_label();
     // test_file();
+
+    s.exec(fichier);
+
+    for (unsigned int i = 0; i < s.sommets[arrive-1].labels.size(); i++) {
+        s.sommets[arrive].labels[i].afficher_label();
+    }
 }

@@ -27,6 +27,7 @@ public:
 	int numero_sommet;
 	std::vector<int> successeurs;
 	std::vector<Arc> arcs;
+	std::map<int, std::pair<double, double>> quick_access;
 	std::map<int, Label> labels;
 
 	Sommet(int num) : numero_sommet(num) {}
@@ -43,6 +44,14 @@ public:
 		arcs.push_back(a);
 	}
 
+	void preprocess_successeurs() {
+		for (unsigned int i = 0; i < arcs.size(); i++) {
+			int arc_key = arcs[i].to;
+			std::pair<double, double> arc_values(arcs[i].longueur, arcs[i].cout);
+			quick_access.insert(std::pair<int, std::pair<double, double>>(arc_key, arc_values));
+		}
+	}
+
 	void ajouter_label(int num, int l, int c) {
 		inserer_label(Label(num, l, c));
 	}
@@ -52,6 +61,8 @@ public:
 	}
 
 	void inserer_label(Label l) {
+		l.afficher_label();
+		std::cout << "LABEL AVANT INSERT" << std::endl;
 		// si l dominé par label dans la liste -> arrêter, pas d'insert
 		// si l domine un label dans la liste -> supprimer le label (attention algorithme à l'algorithme à pile -> supprimer sommet dans la pile si le label est le seul qui doit être exec)
 		std::map<int, Label>::iterator it;
@@ -70,5 +81,6 @@ public:
 		algo_queue.enfiler(numero_sommet);
 		algo_queue.nb_labels[numero_sommet]++;
 		labels.insert(std::pair<int, Label>(l.numero_label, l));
+		std::cout << "MILESTONE : Insertion label n°" << l.numero_label << " > sommet n°" << numero_sommet << std::endl;
 	}
 };

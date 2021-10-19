@@ -11,5 +11,11 @@ int retention_label = 10;
 // Numero de départ des labels
 int prochain_numero_label = 0;
 
+// Sommet de départ
+int depart = 0;
+
+// Sommet d'arrivé
+int arrive = 5;
+
 // Queue pour l'algorithme à pile/queue
 UniqueQueue algo_queue;
