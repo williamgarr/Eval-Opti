@@ -12,10 +12,10 @@ int retention_label = 10;
 int prochain_numero_label = 0;
 
 // Sommet de départ
-int depart = 199;
+int depart = 0;
 
 // Sommet d'arrivé
-int arrive = 200;
+int arrive = 199;
 
 // Queue pour l'algorithme à pile/queue
 UniqueQueue algo_queue;
