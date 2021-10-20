@@ -142,6 +142,7 @@
     <ClCompile Include="Multi-Objectifs.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="DLP_341.dat" />
     <None Include="test.dat" />
   </ItemGroup>
   <ItemGroup>

@@ -66,9 +66,9 @@ void test_file() {
 int main()
 {
     std::cout << "Program start-up" << std::endl;
-    std::string fichier = "test.dat";
+    std::string fichier = "DLP_341.dat";
     Solution s;
-    debug = true;
+    debug = false;
     
     // test_label();
     // test_list_label();
