@@ -146,7 +146,6 @@
     <None Include="test.dat" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Arc.h" />
     <ClInclude Include="Config.h" />
     <ClInclude Include="Label.h" />
     <ClInclude Include="Solution.h" />

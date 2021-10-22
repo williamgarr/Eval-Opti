@@ -7,6 +7,7 @@
 #include "Config.h"
 #include "Solution.h"
 
+// test for label dominance function
 void test_label() {
     Label l1(0, 10, 5);
     Label l2(1, 5, 10);
@@ -21,6 +22,7 @@ void test_label() {
     std::cout << comparer_label(l3, l1) << std::endl;
 }
 
+// test for label propagation
 void test_list_label() {
     Sommet s(1);
     Label l1(0, 10, 10);
@@ -29,18 +31,19 @@ void test_list_label() {
     Label l4(3, 9, 4);
     Label l5(4, 11, 11);
 
-    s.ajouter_label(l1);
-    s.ajouter_label(l2);
-    s.ajouter_label(l2);
-    s.ajouter_label(l3);
-    s.ajouter_label(l4);
-    s.ajouter_label(l5);
+    s.inserer_label(l1);
+    s.inserer_label(l2);
+    s.inserer_label(l2);
+    s.inserer_label(l3);
+    s.inserer_label(l4);
+    s.inserer_label(l5);
 
     std::map<int, Label>::iterator it;
     for (it = s.labels.begin(); it != s.labels.end(); it++)
         (*it).second.afficher_label();
 }
 
+// test for processing queue
 void test_file() {
     algo_queue.display();
     algo_queue.enfiler(1);
@@ -76,9 +79,11 @@ int main()
 
     s.exec(fichier);
 
+    /* Results display in std::cout (depreciated for CSV output)
     std::cout << "RESULTS : Départ = " << depart << " ; Arrivé = " << arrive << std::endl;
     std::map<int, Label>::iterator it;
     for (it = s.sommets[arrive].labels.begin(); it != s.sommets[arrive].labels.end(); it++) {
         (*it).second.afficher_label();
     }
+    */
 }
