@@ -1,0 +1,7 @@
+Fichier = DLP_341.dat
+Max label par noeud = 10
+Nombre noeud = 341;Nombre arc = 1124
+Depart = 199;Arrive = 320
+no_label;longueur;cout;path
+2421;1385.87;849.45;215 232 233 234 262 282 301 318 319 320 *
+2424;1317.41;637.13;216 232 233 234 262 282 301 318 319 320 *

@@ -79,7 +79,10 @@ public:
 
 	void ecriture_fichier(std::string fichier_process) {
 		// file name is like "results_<depart>_<arrive>.csv"
-		std::string nom_fichier = "results_" + std::to_string(depart) + "_" + std::to_string(arrive) + ".csv";
+		std::string strat = "_full";
+		if (retention_label > 0) strat = "_limited";
+		std::string nom_fichier = "results_" + std::to_string(depart) + "_" + std::to_string(arrive) + strat + ".csv";
+		
 		std::ofstream flux(nom_fichier);
 		flux.clear();
 
@@ -88,6 +91,7 @@ public:
 
 			// write results metadata
 			flux << "Fichier = " << fichier_process << std::endl;
+			if (retention_label > 0) flux << "Max label par noeud = " << retention_label << std::endl;
 			flux << "Nombre noeud = " << nombre_noeud << ";Nombre arc = " << nombre_arc << std::endl;
 			flux << "Depart = " << depart << ";Arrive = " << arrive << std::endl;
 			flux << "no_label;longueur;cout;path" << std::endl;

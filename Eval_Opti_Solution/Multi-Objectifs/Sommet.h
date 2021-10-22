@@ -54,9 +54,6 @@ public:
 	/// </summary>
 	/// <param name="l">Label to propagate</param>
 	void inserer_label(Label l) {
-		// si l dominé par label dans la liste -> arrêter, pas d'insert
-		// si l domine un label dans la liste -> supprimer le label (attention algorithme à l'algorithme à pile -> supprimer sommet dans la pile si le label est le seul qui doit être exec)
-		
 		// for each label on the destination :
 		// * compare the two labels
 		// * if l dominated -> quit the function
@@ -76,6 +73,8 @@ public:
 			algo_queue.nb_labels[to_erase[i]]--;
 		}
 		
+		if (retention_label > 0 && labels.size() == retention_label) return;
+
 		// label l insertion
 		algo_queue.enfiler(numero_sommet);
 		algo_queue.nb_labels[numero_sommet]++;
