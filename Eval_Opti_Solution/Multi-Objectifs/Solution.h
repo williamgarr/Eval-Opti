@@ -81,6 +81,7 @@ public:
 		// file name is like "results_<depart>_<arrive>.csv"
 		std::string nom_fichier = "results_" + std::to_string(depart) + "_" + std::to_string(arrive) + ".csv";
 		std::ofstream flux(nom_fichier);
+		flux.clear();
 
 		if (flux) {
 			std::cout << "MILESTONE : Fichier ouvert" << std::endl;
@@ -99,7 +100,7 @@ public:
 				flux << (*it).second.cout << ";";
 				for (unsigned int i = 0; i < (*it).second.chemin.size(); i++)
 					flux << (*it).second.chemin[i] << " ";
-				flux << std::endl;
+				flux << '*' << std::endl;
 			}
 
 			// close stream

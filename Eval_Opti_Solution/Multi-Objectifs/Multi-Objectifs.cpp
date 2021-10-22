@@ -79,11 +79,11 @@ int main()
 
     s.exec(fichier);
 
-    /* Results display in std::cout (depreciated for CSV output)
+    /* Results display in std::cout (depreciated for CSV output)*/
     std::cout << "RESULTS : Départ = " << depart << " ; Arrivé = " << arrive << std::endl;
     std::map<int, Label>::iterator it;
     for (it = s.sommets[arrive].labels.begin(); it != s.sommets[arrive].labels.end(); it++) {
         (*it).second.afficher_label();
     }
-    */
+    
 }
