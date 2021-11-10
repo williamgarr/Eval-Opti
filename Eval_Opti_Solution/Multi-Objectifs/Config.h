@@ -6,13 +6,13 @@
 int debug = false;
 
 // Retention des labels : indique le nombre de label maximum à garder dans chaque sommet
-int retention_label = 10;
+int retention_label = 0;
 
 // Numero de départ des labels
 int prochain_numero_label = 0;
 
 // Sommet de départ
-int depart = 199;
+int depart = 0;
 
 // Sommet d'arrivé
 int arrive = 340;
