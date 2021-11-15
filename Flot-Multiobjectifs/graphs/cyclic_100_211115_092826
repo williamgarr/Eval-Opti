@@ -403,501 +403,601 @@ graph [
   edge [
     source 0
     target 1
-    capacity 223
+    capacity 400
+    cost 94.68959205070999
   ]
   edge [
     source 1
     target 2
-    capacity 57
+    capacity 404
+    cost 13.493926931172316
   ]
   edge [
     source 2
     target 3
-    capacity 451
+    capacity 277
+    cost 85.53835660658261
   ]
   edge [
     source 3
     target 4
-    capacity 54
+    capacity 229
+    cost 4.340817108563234
   ]
   edge [
     source 4
     target 5
-    capacity 137
+    capacity 64
+    cost 8.423372333717685
   ]
   edge [
     source 5
     target 6
-    capacity 386
+    capacity 409
+    cost 40.30439468727441
   ]
   edge [
     source 6
     target 7
-    capacity 233
+    capacity 333
+    cost 29.519354716316457
   ]
   edge [
     source 7
     target 8
-    capacity 410
+    capacity 246
+    cost 65.28171474539947
   ]
   edge [
     source 8
     target 9
-    capacity 7
+    capacity 3
+    cost 6.974943622179435
   ]
   edge [
     source 9
     target 10
-    capacity 3
+    capacity 186
+    cost 90.17831606385468
   ]
   edge [
     source 10
     target 11
-    capacity 394
+    capacity 201
+    cost 33.839859272382945
   ]
   edge [
     source 11
     target 12
-    capacity 437
+    capacity 30
+    cost 42.302041908562686
   ]
   edge [
     source 12
     target 13
-    capacity 264
+    capacity 280
+    cost 80.33574953221245
   ]
   edge [
     source 13
     target 14
-    capacity 83
+    capacity 322
+    cost 97.30784014438582
   ]
   edge [
     source 14
     target 15
-    capacity 451
+    capacity 218
+    cost 26.369210823948098
   ]
   edge [
     source 15
     target 16
-    capacity 188
+    capacity 394
+    cost 91.61045229865753
   ]
   edge [
     source 16
     target 17
-    capacity 220
+    capacity 188
+    cost 37.28076973344838
   ]
   edge [
     source 17
     target 18
-    capacity 185
+    capacity 276
+    cost 1.7945283550955695
   ]
   edge [
     source 18
     target 19
-    capacity 184
+    capacity 327
+    cost 69.1198538087442
   ]
   edge [
     source 19
     target 20
-    capacity 484
+    capacity 32
+    cost 15.683252426720722
   ]
   edge [
     source 20
     target 21
-    capacity 374
+    capacity 135
+    cost 17.656607334149808
   ]
   edge [
     source 21
     target 22
-    capacity 153
+    capacity 36
+    cost 83.91853016788976
   ]
   edge [
     source 22
     target 23
-    capacity 31
+    capacity 134
+    cost 2.5379459171083116
   ]
   edge [
     source 23
     target 24
-    capacity 322
+    capacity 30
+    cost 41.23563221986456
   ]
   edge [
     source 24
     target 25
-    capacity 151
+    capacity 61
+    cost 17.469675191508912
   ]
   edge [
     source 25
     target 26
-    capacity 355
+    capacity 431
+    cost 85.75332648603008
   ]
   edge [
     source 26
     target 27
-    capacity 275
+    capacity 422
+    cost 18.12452182708292
   ]
   edge [
     source 27
     target 28
-    capacity 290
+    capacity 323
+    cost 48.628963735437274
   ]
   edge [
     source 28
     target 29
-    capacity 414
+    capacity 349
+    cost 28.926103398842187
   ]
   edge [
     source 29
     target 30
-    capacity 197
+    capacity 481
+    cost 15.473119211958359
   ]
   edge [
     source 30
     target 31
-    capacity 434
+    capacity 487
+    cost 51.51378440698943
   ]
   edge [
     source 31
     target 32
-    capacity 439
+    capacity 169
+    cost 36.81446428693133
   ]
   edge [
     source 32
     target 33
-    capacity 303
+    capacity 75
+    cost 6.390193645572516
   ]
   edge [
     source 33
     target 34
-    capacity 340
+    capacity 207
+    cost 47.868473757332424
   ]
   edge [
     source 34
     target 35
-    capacity 153
+    capacity 224
+    cost 13.768869658893378
   ]
   edge [
     source 35
     target 36
-    capacity 273
+    capacity 457
+    cost 46.81470790268039
   ]
   edge [
     source 36
     target 37
-    capacity 188
+    capacity 238
+    cost 77.09370754250402
   ]
   edge [
     source 37
     target 38
-    capacity 500
+    capacity 324
+    cost 61.83881923735179
   ]
   edge [
     source 38
     target 39
-    capacity 368
+    capacity 452
+    cost 88.87214217595964
   ]
   edge [
     source 39
     target 40
-    capacity 412
+    capacity 133
+    cost 66.06303874458989
   ]
   edge [
     source 40
     target 41
-    capacity 334
+    capacity 229
+    cost 41.14625109871883
   ]
   edge [
     source 41
     target 42
-    capacity 370
+    capacity 166
+    cost 16.690124947721266
   ]
   edge [
     source 42
     target 43
-    capacity 16
+    capacity 265
+    cost 99.8191140682781
   ]
   edge [
     source 43
     target 44
-    capacity 408
+    capacity 264
+    cost 84.63458199367726
   ]
   edge [
     source 44
     target 45
-    capacity 418
+    capacity 428
+    cost 47.73116936827288
   ]
   edge [
     source 45
     target 46
-    capacity 482
+    capacity 407
+    cost 10.448674778103047
   ]
   edge [
     source 46
     target 47
-    capacity 287
+    capacity 172
+    cost 50.76051609073593
   ]
   edge [
     source 47
     target 48
-    capacity 12
+    capacity 194
+    cost 86.28496321787324
   ]
   edge [
     source 48
     target 49
-    capacity 20
+    capacity 78
+    cost 93.14779473600274
   ]
   edge [
     source 49
     target 50
-    capacity 145
+    capacity 449
+    cost 96.17757315497254
   ]
   edge [
     source 50
     target 51
-    capacity 80
+    capacity 362
+    cost 77.18712999424392
   ]
   edge [
     source 51
     target 52
-    capacity 483
+    capacity 480
+    cost 81.43867295957214
   ]
   edge [
     source 52
     target 53
-    capacity 387
+    capacity 355
+    cost 25.88863041235041
   ]
   edge [
     source 53
     target 54
-    capacity 130
+    capacity 66
+    cost 39.27121827291437
   ]
   edge [
     source 54
     target 55
-    capacity 362
+    capacity 239
+    cost 91.45043048030601
   ]
   edge [
     source 55
     target 56
-    capacity 307
+    capacity 187
+    cost 36.374708635574564
   ]
   edge [
     source 56
     target 57
-    capacity 154
+    capacity 494
+    cost 59.119511226368466
   ]
   edge [
     source 57
     target 58
-    capacity 321
+    capacity 418
+    cost 7.00158135072798
   ]
   edge [
     source 58
     target 59
-    capacity 416
+    capacity 317
+    cost 74.53535587758043
   ]
   edge [
     source 59
     target 60
-    capacity 497
+    capacity 80
+    cost 27.947997937777547
   ]
   edge [
     source 60
     target 61
-    capacity 255
+    capacity 212
+    cost 6.861446865874841
   ]
   edge [
     source 61
     target 62
-    capacity 98
+    capacity 76
+    cost 88.81429077538765
   ]
   edge [
     source 62
     target 63
-    capacity 347
+    capacity 54
+    cost 68.39278697229258
   ]
   edge [
     source 63
     target 64
-    capacity 195
+    capacity 210
+    cost 66.31594882977873
   ]
   edge [
     source 64
     target 65
-    capacity 189
+    capacity 265
+    cost 80.26586257775429
   ]
   edge [
     source 65
     target 66
-    capacity 376
+    capacity 378
+    cost 57.974938751015564
   ]
   edge [
     source 66
     target 67
-    capacity 175
+    capacity 34
+    cost 24.7701103502157
   ]
   edge [
     source 67
     target 68
-    capacity 99
+    capacity 366
+    cost 12.009802730085068
   ]
   edge [
     source 68
     target 69
-    capacity 198
+    capacity 49
+    cost 29.20613486405492
   ]
   edge [
     source 69
     target 70
-    capacity 459
+    capacity 85
+    cost 89.73970304623685
   ]
   edge [
     source 70
     target 71
-    capacity 183
+    capacity 214
+    cost 74.44019516678958
   ]
   edge [
     source 71
     target 72
-    capacity 296
+    capacity 335
+    cost 49.75968897669983
   ]
   edge [
     source 72
     target 73
-    capacity 170
+    capacity 225
+    cost 13.33715540684134
   ]
   edge [
     source 73
     target 74
-    capacity 271
+    capacity 135
+    cost 46.99970920840338
   ]
   edge [
     source 74
     target 75
-    capacity 41
+    capacity 183
+    cost 37.98755909772413
   ]
   edge [
     source 75
     target 76
-    capacity 379
+    capacity 490
+    cost 30.767551873131726
   ]
   edge [
     source 76
     target 77
-    capacity 387
+    capacity 47
+    cost 28.74097420566853
   ]
   edge [
     source 77
     target 78
-    capacity 500
+    capacity 289
+    cost 37.39727143159952
   ]
   edge [
     source 78
     target 79
-    capacity 292
+    capacity 202
+    cost 89.44627148650049
   ]
   edge [
     source 79
     target 80
-    capacity 412
+    capacity 103
+    cost 80.72525854816456
   ]
   edge [
     source 80
     target 81
-    capacity 244
+    capacity 237
+    cost 21.093881509202973
   ]
   edge [
     source 81
     target 82
-    capacity 284
+    capacity 454
+    cost 60.02224502806862
   ]
   edge [
     source 82
     target 83
-    capacity 405
+    capacity 306
+    cost 80.67692823239064
   ]
   edge [
     source 83
     target 84
-    capacity 126
+    capacity 414
+    cost 35.92222622662988
   ]
   edge [
     source 84
     target 85
-    capacity 63
+    capacity 471
+    cost 65.72864665807572
   ]
   edge [
     source 85
     target 86
-    capacity 210
+    capacity 211
+    cost 10.096075501188675
   ]
   edge [
     source 86
     target 87
-    capacity 10
+    capacity 414
+    cost 7.5117403630704995
   ]
   edge [
     source 87
     target 88
-    capacity 490
+    capacity 391
+    cost 77.81490407795076
   ]
   edge [
     source 88
     target 89
-    capacity 319
+    capacity 414
+    cost 73.57546550515801
   ]
   edge [
     source 89
     target 90
-    capacity 474
+    capacity 253
+    cost 44.087084023606714
   ]
   edge [
     source 90
     target 91
-    capacity 106
+    capacity 118
+    cost 99.61190670835563
   ]
   edge [
     source 91
     target 92
-    capacity 477
+    capacity 137
+    cost 32.2713442040306
   ]
   edge [
     source 92
     target 93
-    capacity 7
+    capacity 225
+    cost 3.7328919214294585
   ]
   edge [
     source 93
     target 94
-    capacity 330
+    capacity 110
+    cost 38.898054832411745
   ]
   edge [
     source 94
     target 95
-    capacity 159
+    capacity 472
+    cost 76.00710695574146
   ]
   edge [
     source 95
     target 96
-    capacity 280
+    capacity 463
+    cost 34.828071825342505
   ]
   edge [
     source 96
     target 97
-    capacity 230
+    capacity 114
+    cost 13.309699756096444
   ]
   edge [
     source 97
     target 98
-    capacity 12
+    capacity 34
+    cost 92.97042356057186
   ]
   edge [
     source 98
     target 99
-    capacity 291
+    capacity 451
+    cost 27.59991292755847
   ]
   edge [
     source 99
     target 0
-    capacity 221
+    capacity 12
+    cost 72.8240957402086
   ]
 ]
